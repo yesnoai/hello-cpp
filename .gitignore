@@ -1,0 +1,6 @@
+hello_cpp
+build/
+*.o
+*.dSYM
+.DS_Store
+

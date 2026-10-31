@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "C/C++: 编译并运行当前文件",
+      "command": "/usr/bin/clang++ -std=c++17 -Wall -Wextra -O2 -g \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}\" && \"${fileDirname}/${fileBasenameNoExtension}\"",
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": ["$gcc"],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "编译并在终端直接运行当前活动文件（支持 std::cin 键盘输入）"
+    },
+    {
+      "type": "shell",
+      "label": "C/C++: 仅编译当前文件",
+      "command": "/usr/bin/clang++",
+      "args": [
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-O2",
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": ["$gcc"],
+      "detail": "使用 clang++ 仅编译当前文件，供 F5 调试前置调用"
+    }
+  ]
+}
