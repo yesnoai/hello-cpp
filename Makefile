@@ -1,6 +1,6 @@
 CXX = clang++
 CXXFLAGS = -std=c++17 -Wall -Wextra -O2
-TARGET = hello_cpp
+TARGET = hello-cpp
 SRC = main.cpp
 
 all: $(TARGET)

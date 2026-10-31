@@ -2,10 +2,10 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "C/C++: 运行/调试当前文件 (LLDB)",
+      "name": "C/C++: 运行/调试 hello-cpp (LLDB)",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${fileDirname}/${fileBasenameNoExtension}",
+      "program": "${fileDirname}/hello-cpp",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${fileDirname}",
@@ -16,4 +16,3 @@
     }
   ]
 }
-

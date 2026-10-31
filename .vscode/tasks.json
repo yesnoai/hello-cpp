@@ -4,7 +4,7 @@
     {
       "type": "shell",
       "label": "C/C++: 编译并运行当前文件",
-      "command": "/usr/bin/clang++ -std=c++17 -Wall -Wextra -O2 -g \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}\" && \"${fileDirname}/${fileBasenameNoExtension}\"",
+      "command": "/usr/bin/clang++ -std=c++17 -Wall -Wextra -O2 -g \"${file}\" -o \"${fileDirname}/hello-cpp\" && \"${fileDirname}/hello-cpp\"",
       "options": {
         "cwd": "${fileDirname}"
       },
@@ -21,7 +21,7 @@
         "kind": "build",
         "isDefault": true
       },
-      "detail": "编译并在终端直接运行当前活动文件（支持 std::cin 键盘输入）"
+      "detail": "编译生成 hello-cpp 并在终端直接运行（支持 std::cin 键盘输入）"
     },
     {
       "type": "shell",
@@ -35,13 +35,13 @@
         "-g",
         "${file}",
         "-o",
-        "${fileDirname}/${fileBasenameNoExtension}"
+        "${fileDirname}/hello-cpp"
       ],
       "options": {
         "cwd": "${fileDirname}"
       },
       "problemMatcher": ["$gcc"],
-      "detail": "使用 clang++ 仅编译当前文件，供 F5 调试前置调用"
+      "detail": "使用 clang++ 编译出 hello-cpp，供 F5 调试前置调用"
     }
   ]
 }

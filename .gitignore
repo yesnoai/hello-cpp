@@ -1,6 +1,26 @@
+# Compiled binaries & executables
+hello-cpp
 hello_cpp
-build/
-*.o
-*.dSYM
-.DS_Store
+main
+*.out
+*.exe
+*.app
 
+# Object files & libraries
+*.o
+*.obj
+*.so
+*.dylib
+*.a
+
+# Build directories & debug symbols
+build/
+bin/
+out/
+*.dSYM/
+*.dSYM
+
+# System & editor cache
+.DS_Store
+.cache/
+compile_commands.json
